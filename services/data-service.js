@@ -5,7 +5,7 @@ export const asnyc = {
 
 }
 
-const url = 'api/v1/product'
+const url = '/api/v1/product'
 
 function getAll(){
 

@@ -9,9 +9,11 @@ export const apiWrapper = {
 
 
 async function get(url){
-
+    
     const resp = await api.get(url)
-    console.log(resp.data)
+    
+    return resp
+
 
 }
 
