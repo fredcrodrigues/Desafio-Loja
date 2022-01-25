@@ -11,17 +11,16 @@ export const apiWrapper = {
 async function get(url){
     
     const resp = await api.get(url)
-    
+
     return resp
 
 
 }
 
-async function post(url){
+async function post(){
+  
 
 }
-
-
 async function _delete(url){
     
 }

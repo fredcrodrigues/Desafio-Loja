@@ -16,16 +16,17 @@
     display: block;
     overflow: hidden;
     margin: 1rem 1rem;
-    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.1);   
-    border-radius: calc(40 * 1px);
+    border: 1px solid rgb(0, 0, 0, 0.2);
     max-width: 300px;
+    transition: 0.2s;
 }
 
 
 /* Container Card <img>*/
 .container_card img{
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
   width: 100%;
-  height: auto;
+  height:auto;
 
 }
 
@@ -37,9 +38,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    font-family: 'Poppins';
 }
-
+/*Texto do Preço*/
 .card_text_price{
     position: relative;
     bottom: 60px;
@@ -50,30 +51,34 @@
     height:100px;
     border-radius: 100%;
     background-color: #fff;
+    text-align: center;
 }
+/*Efeito*/
 
 .container_card li:hover .card_text_price{
     transform: translateY(0%);
-    box-shadow: 1px 1px 1px 1px (0, 0, 0, 0.2);
     
+}
+/*Efeito Sombra*/
+.container_card li:hover{
+    box-shadow: 4px 4px 20px 4px rgb(0,0,0, 0.1);
 }
 
 /* Texto do Preço*/
 
 .card_text_price p{
     padding-top: 1rem;
-    text-align: center;
     font-size: 0.5rem;
-    font-family: 'Poppins';
+   
 }
 
 .card_text_price p span{
     font-weight: 500;
     font-size: 1.5rem;
-    font-family: 'Poppins';
 }
 
-/*Buttao de adicionar*/
+/*Botão de  add*/
+
 .card_text_button{
     position: relative;
     bottom: 20px;
@@ -86,6 +91,38 @@
     width: 50px;
     height: 50px;
     border-radius: 100%;
+    box-shadow: 2px 2px 2px 2px (0,0,0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.card_text_button button:hover{
+    background-color:transparent;
+    border: 2px solid #01B31A;
+    color:#01B31A;
+
+}
+
+/*estilo para o span do botão*/
+.card_text_button button span{
+    text-align: center ;
+}
+
+
+/*Informaçõesd do Produto*/
+.card_text_name_product{
+    font-weight: 500;
+    color:#2190C7;
+
+}
+
+.card_text_name_product span{
+    padding: 0.5rem;
+}
+
+.card_text_name_product p{
+    color:#01B31A;
+    font-weight: 500;
+    
 }
 /*
 
