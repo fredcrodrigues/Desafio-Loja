@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F4F5F9;
+    overflow: hidden;
+  
+}
+.image{
+   padding: 0;
+   animation: fadein 4s;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    position:relative;
+    top:25%;
+    animation: fadein 4s;
+
+    
+}
+.title h1,
+.title h2,
+.title h3{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.title h1{
+    font-size: 3.2rem;
+    font-weight: 800;
+    font-family: 'Poppins';
+    color: #2190C7;
+    padding: 0.5rem;
+
+}
+.title h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 0.5rem;
+
+}
+.title a{
+    background-color: #2190C7;
+    border-radius: 40px;
+    width: 10rem;
+    height:3rem;
+    padding: 0.8rem;
+    transition: 2s;
+    text-align: center;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.title a:hover{
+    background-color: #2190C7;
+}
+
+/*Background*/
+
+.shape_1{
+    width:150px;
+    height:150px;
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+    background-color:  rgb(33, 144, 199, 0.1);
+    transform: rotate(45deg);
+    animation: moveEffectbefore 30s infinite  alternate;
+
+
+}
+.shape_2{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    background-color:   rgb(33, 144, 199, 0.1);
+    animation: moveEffectafter 30s infinite  alternate;
+    transform: rotate(180deg)
+ 
+    
+}
+
+.shape_3{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    background-color:   rgb(33, 144, 199, 0.1);
+    animation: moveEffectafter 30s infinite  alternate;
+    
+}
+
+
+@keyframes fadein {
+    from { transform: translateY(100%);   transition: .5s ease 0s; opacity: 0;}
+    to {transform: translateY(0%);}
+}
+
+@media screen and (max-width: 1142px){
+
+    .container{
+        flex-direction: column;
+    }
+    .image img{
+        padding: 2rem;
+    }
+}
+ 
+/*
+@media screen and (max-width: 1130px) {
+    .container{
+        background: none;
+    }
+
+    /*.shape{
+       
+        transform:rotate(60deg);
+        bottom: -50%;
+        animation: none;
+    }
+    .title{
+        padding: 1rem;
+        color:#2190C7 ;
+        justify-content: center;
+    }
+    
+}
+
+@keyframes  moveEffectafter{
+   
+    0%{ transform: rotate(-10deg)}
+    100%{transform: rotate(90deg)}
+}*/
+

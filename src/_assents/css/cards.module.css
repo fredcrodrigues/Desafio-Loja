@@ -1,0 +1,142 @@
+
+/* Container Card Image*/
+.container_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 4rem 0;
+    
+}
+
+/* Container Card <li></li>*/
+.container_card li{
+    display: block;
+    overflow: hidden;
+    margin: 1rem 1rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: 0.2s;
+}
+
+
+/* Container Card <img>*/
+.container_card img{
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  width: 100%;
+  height:auto;
+
+}
+
+
+
+/*Container do Efeito Para o Preço*/
+.card_text_price_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+/*Texto do Preço*/
+.card_text_price{
+    position: relative;
+    bottom: 60px;
+    z-index: 1;
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+    width: 100px;
+    height:100px;
+    border-radius: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+/*Efeito*/
+
+.container_card li:hover .card_text_price{
+    transform: translateY(0%);
+    
+}
+/*Efeito Sombra*/
+.container_card li:hover{
+    box-shadow: 4px 4px 20px 4px rgb(0,0,0, 0.1);
+}
+
+/* Texto do Preço*/
+
+.card_text_price p{
+    padding-top: 1rem;
+    font-size: 0.5rem;
+   
+}
+
+.card_text_price p span{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/*Botão de  add*/
+
+.card_text_button{
+    position: relative;
+    bottom: 20px;
+    
+}
+.card_text_button button{
+    color: #fff;
+    background-color: #01B31A;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px 2px (0,0,0, 0.2);
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.card_text_button button:hover{
+    background-color:transparent;
+    border: 2px solid #01B31A;
+    color:#01B31A;
+
+}
+
+/*estilo para o span do botão*/
+.card_text_button button span{
+    text-align: center ;
+}
+
+
+/*Informaçõesd do Produto*/
+.card_text_name_product{
+    font-weight: 500;
+    color:#2190C7;
+
+}
+
+.card_text_name_product span{
+    padding: 0.5rem;
+}
+
+.card_text_name_product p{
+    color:#01B31A;
+    font-weight: 500;
+    
+}
+/*
+
+
+.container_card ul {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    list-style: none;
+    
+}
+
+
+
+
+
+
+*/
