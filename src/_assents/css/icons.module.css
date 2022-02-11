@@ -9,20 +9,16 @@
     display: flex;
     justify-content: center;
     padding: 2rem;
+    flex:1;
   
 }
-.icon {
-    max-width: 60px;
 
-}
 .icon img{
-    width: 50px;
+    width: 95px;
     height: 50px;
+    padding-right: 1rem;
 }
 
-.text{
-
-}
 
 .text h3{
     margin: 0;
@@ -32,4 +28,8 @@
     font-size: 0.8rem;
     color: rgb(0, 0, 0, 0.5);
 }
-
+@media screen and (max-width: 600px) {
+    .banner{
+        padding: 1rem;
+    }
+}

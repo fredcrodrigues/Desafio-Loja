@@ -19,7 +19,7 @@ export default function Info(){
                     <img src='icons/suporte.svg'/>
                 </div>
                 <div  className={styles.text}>
-                    <h3>Atendimento 24 horas</h3>
+                    <h3>24 horas</h3>
                     <p>Equipe sempre disponível</p>
                 </div>
             </div>
@@ -30,6 +30,15 @@ export default function Info(){
                 <div className={styles.text}>
                     <h3>20% de desconto</h3>
                     <p>Compras acima de R$ 50,00</p>
+                </div>
+           </div>
+           <div  className={styles.banner}>
+                <div className={styles.icon}> 
+                    <img src='icons/compras.svg'/>
+                </div>
+                <div className={styles.text}>
+                    <h3>Super Seguro!</h3>
+                    <p>As compras são 100% seguras</p>
                 </div>
            </div>
           
