@@ -140,6 +140,29 @@
         font-size: 1rem;
     }
 }
+@media screen and (max-width: 270px){
+
+
+    .title h1{
+        font-size: 1.5rem;
+    }
+    .title h2{
+        font-size: 0.8rem;
+    }
+    .shape_1{
+        width:87px;
+        height:87px;
+        position: absolute;
+        left: 30%;
+        bottom: 50%;
+        background-color:  rgb(33, 144, 199, 0.1);
+        transform: rotate(45deg);
+        animation: moveEffectbefore 30s infinite  alternate;
+    
+    
+    }
+
+}
 
 @keyframes fadein {
     from { transform: translateY(100%);   transition: .5s ease 0s; opacity: 0;}
