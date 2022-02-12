@@ -1,6 +1,5 @@
 .container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     padding:1rem;
 
@@ -12,6 +11,7 @@
     flex:1;
   
 }
+/* usar o display grid*/
 
 .icon img{
     width: 95px;
@@ -31,5 +31,11 @@
 @media screen and (max-width: 600px) {
     .banner{
         padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner{
+        flex: none;
     }
 }

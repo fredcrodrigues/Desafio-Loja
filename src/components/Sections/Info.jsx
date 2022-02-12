@@ -1,4 +1,4 @@
-import styles from "../../_assents/css/icons.module.css" 
+import styles from "../../_assents/css/info.module.css" 
 
 
 export default function Info(){

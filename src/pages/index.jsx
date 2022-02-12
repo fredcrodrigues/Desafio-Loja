@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../_assents/css/main.module.css'
-import {Banner , Cards, Info, Nav} from '../helpers/index'
+import {Banner , Cards, Info, Nav,  Categories } from '../helpers/index'
 export default function Home() {
 
   
@@ -26,9 +26,11 @@ export default function Home() {
         {/* Banner Principal*/}
             <Banner></Banner>
 
-        {/* Informações de compra*/}
-          <Info></Info>
+        {/* Informações da Pagina*/}
+            <Info></Info>
         
+        {/*Categorias*/}
+           <Categories></Categories> 
         {/* Lista de produtos*/}
            <Cards></Cards>
       </main>

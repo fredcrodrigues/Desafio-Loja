@@ -2,8 +2,9 @@
 
 import Banner from "../components/Banner/Banner";
 import Cards from "../components/Card/Cards";
-import Info  from "../components/Info/Info";
-import Nav  from "../components/Nav/Nav";
+import Info from "../components/Sections/Info";
+import Nav  from "../components//Nav/Nav";
+import Categories from "../components/Sections/Categories";
 
 
-export{Banner , Cards, Info, Nav}
+export{Banner , Cards, Info, Nav, Categories }

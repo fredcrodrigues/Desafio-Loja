@@ -131,6 +131,7 @@
 
     .image img{
         max-width: 600px;
+        max-height: 520px;
     }
     .title h1{
         font-size: 2.0rem;
