@@ -1,6 +1,6 @@
 import styles from  "../../_assents/css/categories.module.css"
-import {FaCaretLeft, FaCaretRight} from "react-icons/fa"
-import {useRef} from "react"
+import {FaAngleLeft, FaAngleRight} from "react-icons/fa"
+import {useRef, useState} from "react"
 
 
 
@@ -8,16 +8,22 @@ export default function Categories(){
         
 
         const categorie = useRef(null)
+
+        //const [scroll, setScroll] = useState(null)
+       // const [offLeft, setoffLeft] = useState(null)
+
         const clickRight = (e) =>{
                
                 e.preventDefault()
                 categorie.current.scrollLeft -=  categorie.current.offsetWidth
+               
 
         }
 
         const clickLeft= (e) =>{
                 e.preventDefault()
                 categorie.current.scrollLeft +=  categorie.current.offsetWidth
+
         }
                 
                 
@@ -27,7 +33,7 @@ export default function Categories(){
        
         <div className={styles.container}>
                 <div className={styles.carrousel} ref={categorie}>
-                        <div className={styles.categorie}>
+                        <div className={styles.categorie} id="1">
                                 <div className={styles.image}>
                                         <img src="/images/categories/casa.png" alt="" />
                                 </div>
@@ -36,7 +42,7 @@ export default function Categories(){
                                 </div>
                         </div>
 
-                        <div className={styles.categorie}>
+                        <div className={styles.categorie} id="2">
                                 <div className={styles.image}>
                                         <img src="/images/categories/sapatos.png" alt="" />
                                 </div>
@@ -72,9 +78,9 @@ export default function Categories(){
                                 </div>
                         </div>
                 </div>
-                <div className={styles.buttoms}>
-                        <button onClick={clickRight}><FaCaretLeft size={16} /></button>
-                        <button onClick={clickLeft}><FaCaretRight size={16} /></button>
+                <div className={styles.buttons}>
+                        <button  onClick={clickRight}>< FaAngleLeft size={30} /></button>
+                        <button   onClick={clickLeft}>< FaAngleRight size={30} /></button>
                 </div>
         </div>
        

@@ -25,27 +25,64 @@
     width: 100px;
     height: 100px;
 }
-.buttoms{
+.buttons{
     display: none;
+    
+}
+.b_hidden{
+    visibility: hidden;
 }
 
 @media screen and (max-width: 1400px) {
+    
+    .container .carrousel::-webkit-scrollbar{
+        display: none;
+    }
+    
     .carrousel{
         display: -webkit-box;
         overflow-x: auto;
         scroll-behavior: smooth;
+        /*scroll-snap-type: x mandatory;*/
     }
+   
     
-    .buttoms{
+    .buttons{
         display:flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 200px;
 
 
     }
-    .buttoms button{
+    .buttons button{
         padding: 1rem;
-        background-color: #2190C7;
         border-radius: 100%;
+        background-color:rgb(196,193,193, 0.2);
+        margin: 1rem;
+        color: rgb(33,144,199,0.7);
+        border-style: none;
     }
+   
+}
 
-    
+@media screen and (max-width: 375px){
+    .categorie{
+        padding: 1rem;
+        width: 247px;
+        height: 279px;
+        margin: 39px 46px;
+ 
+    }
+   
+ }
+
+@media screen and (max-width: 326px){
+   .categorie{
+        padding: 1rem;
+        width: 274px;
+        height: 299px;
+        margin: 39px 8px;
+
+   }
 }
