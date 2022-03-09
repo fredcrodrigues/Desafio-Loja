@@ -20,19 +20,16 @@
     border: 1px solid rgb(0, 0, 0 , 0.1);
     background-color: #fff;
     margin: 39px 21px;
+   
 }
 .image img{
     width: 100px;
     height: 100px;
 }
-.buttons{
-    display: none;
-    
-}
-.b_hidden{
-    visibility: hidden;
-}
 
+.buttons{
+    display:none;
+}
 @media screen and (max-width: 1400px) {
     
     .container .carrousel::-webkit-scrollbar{
@@ -42,11 +39,15 @@
     .carrousel{
         display: -webkit-box;
         overflow-x: auto;
-        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        /*scroll-snap-align: start;*/
+        /*scroll-behavior: smooth;*/
         /*scroll-snap-type: x mandatory;*/
     }
    
-    
+   
+
+
     .buttons{
         display:flex;
         justify-content: space-between;
