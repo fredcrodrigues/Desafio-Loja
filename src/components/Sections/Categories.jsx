@@ -14,24 +14,17 @@ export default function Categories(){
 
        
         const clickRight = (e) =>{
-               
                 e.preventDefault()
-               
-                categorie.current.appendChild(categorie.current.lastChild)
+                console.log(categorie.current.lastChild)
+                categorie.current.prepend(categorie.current.lastChild)
         }
 
         const clickLeft= (e) =>{
-                e.preventDefault()
+                e.preventDefault()   
+                console.log(categorie.current.firstChild)
                 categorie.current.appendChild(categorie.current.firstChild)
-                
-
         }
                
-
-       
-       
-                
-        
         return(
         <>
        
